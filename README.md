@@ -14,8 +14,14 @@ const geth = require("ethereum-go-ipc");
 // default IPC path set to '/root/.ethereum/geth.ipc'
 geth.setGethSocket("/path/to/geth.ipc");
 
+// optional geth.delay(ms) for managing race conditions.
+// Simply put, allow geth node time to load.
 
-geth.listAccounts().then((accounts) => {
+geth.delay(3000).then(() => {
+  return geth.newAccount('password');
+}).then((created) => {
+  return geth.listAccounts();
+}).then((accounts) => {
   console.log(accounts);
 }).catch((error) => {
   console.log(error);
