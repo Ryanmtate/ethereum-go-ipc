@@ -1,6 +1,6 @@
 {
   "name": "ethereum-go-ipc",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Promisified Ethereum JSON RPC wrappers for Geth (Ethereum Go-Lang implementation)",
   "repository": {
     "type": "git",
