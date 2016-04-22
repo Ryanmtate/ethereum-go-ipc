@@ -1,7 +1,6 @@
 const geth = require('./index');
 
-geth.setGethSocket();
-
+geth.setGethSocket("/Users/ryan/Library/Ethereum/geth.ipc");
 
 
 geth.delay(3000).then(() => {
