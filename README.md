@@ -11,6 +11,10 @@ Promisified Ethereum JSON RPC wrappers for Geth (Ethereum Go-Lang implementation
 ```js
 const geth = require("ethereum-go-ipc");
 
+// default IPC path set to '/root/.ethereum/geth.ipc'
+geth.setGethSocket("/path/to/geth.ipc");
+
+
 geth.listAccounts().then((accounts) => {
   console.log(accounts);
 }).catch((error) => {
