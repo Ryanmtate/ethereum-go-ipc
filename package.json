@@ -1,0 +1,21 @@
+{
+  "name": "ethereum-go-ipc",
+  "version": "0.0.1",
+  "description": "Promisified Ethereum JSON RPC wrappers for Geth (Ethereum Go-Lang implementation)",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "Ethereum",
+    "Geth",
+    "IPC",
+    "Promises"
+  ],
+  "author": "Ryan Michael Tate",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.3.5",
+    "web3": "^0.15.3"
+  }
+}
